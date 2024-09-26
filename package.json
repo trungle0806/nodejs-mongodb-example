@@ -11,8 +11,7 @@
   "dependencies": {
     "express": "^4.21.0",
     "mongoose": "^8.6.3",
-    "firebase-admin": "^11.14.1", 
-    "mongose": "^0.0.2-security"
+    "firebase-admin": "^11.12.0"
   },
   "description": ""
 }
