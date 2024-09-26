@@ -23,7 +23,7 @@ admin.initializeApp({
 });
 
 const db = admin.firestore();
-const collection = db.collection("shop flower"); // Collection treeShop trong Firestore
+const collection = db.collection("tree-shop-nodejs"); // Collection treeShop trong Firestore
 
 // 1. Create a new tree: POST
 app.post("/trees", async (req, res) => {
