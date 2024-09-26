@@ -23,7 +23,7 @@ admin.initializeApp({
 });
 
 const db = admin.firestore();
-const collection = db.collection("tree-shop-nodejs"); // Collection treeShop trong Firestore
+const collection = db.collection("shop flower"); // Collection treeShop trong Firestore
 
 // 1. Create a new tree: POST
 app.post("/trees", async (req, res) => {
@@ -87,7 +87,7 @@ app.delete("/trees/:id", async (req, res) => {
   try {
     await collection.doc(req.params.id).delete();
     res.status(200).send("Tree deleted successfully");
-  } catch (error) {
+} catch (error) {
     res.status(500).send("Error deleting tree: " + error.message);
   }
 });
@@ -95,5 +95,5 @@ app.delete("/trees/:id", async (req, res) => {
 // Chạy server với port online hoặc 3000 local
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(Server is running on port ${PORT});
+  console.log(`Server is running on port ${PORT}`);
 });
