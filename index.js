@@ -23,7 +23,7 @@ admin.initializeApp({
 });
 
 const db = admin.firestore();
-const collection = db.collection("Tree-shop-nodejs"); // Collection treeShop trong Firestore
+const collection = db.collection("tree-shop-nodejs"); // Collection treeShop trong Firestore
 
 // 1. Create a new tree: POST
 app.post("/trees", async (req, res) => {
@@ -96,4 +96,4 @@ app.delete("/trees/:id", async (req, res) => {
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(Server is running on port ${PORT});
-}); 
+});
